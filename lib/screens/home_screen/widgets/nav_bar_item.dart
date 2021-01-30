@@ -28,10 +28,10 @@ class _NavBarItemState extends State<NavBarItem>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      vsync: this,
+      //vsync: this,
       duration: Duration(milliseconds: 200),
       lowerBound: 1,
-      upperBound: 1.3,
+      upperBound: 1.3, vsync: this,
     );
   }
 
